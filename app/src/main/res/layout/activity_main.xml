@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/month"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text=""
+        android:gravity="center"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_below="@id/month"/>
+
+    <TextView
+        android:id="@+id/review"
+        android:text="REVIEW"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_bg"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/review"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+</RelativeLayout>
